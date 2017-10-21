@@ -1,7 +1,7 @@
 package utils.condition;
 
-import guitreeparser.object.EfgEvent;
-import guitreeparser.object.INode;
+import guitree.object.EfgEvent;
+import guitree.object.INode;
 import utils.ISearchCondition;
 
 /**
@@ -10,9 +10,9 @@ import utils.ISearchCondition;
  */
 public class EventNodeCondition implements ISearchCondition {
 
-    @Override
-    public boolean isSatisfiable(INode n) {
-        return n instanceof EfgEvent;
-    }
+	@Override
+	public boolean isSatisfiable(INode n) {
+		return n instanceof EfgEvent;
+	}
 
 }

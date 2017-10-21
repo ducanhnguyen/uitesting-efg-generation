@@ -1,9 +1,9 @@
 package utils.condition;
 
-import guitreeparser.object.GuiContainerNode;
-import guitreeparser.object.GuiWidgetNode;
-import guitreeparser.object.GuiWindowNode;
-import guitreeparser.object.INode;
+import guitree.object.GuiContainerNode;
+import guitree.object.GuiWidgetNode;
+import guitree.object.GuiWindowNode;
+import guitree.object.INode;
 import utils.ISearchCondition;
 
 /**
@@ -12,10 +12,9 @@ import utils.ISearchCondition;
  */
 public class GuiNodeCondition implements ISearchCondition {
 
-    @Override
-    public boolean isSatisfiable(INode n) {
-        return n instanceof GuiContainerNode || n instanceof GuiWidgetNode
-                || n instanceof GuiWindowNode;
-    }
+	@Override
+	public boolean isSatisfiable(INode n) {
+		return n instanceof GuiContainerNode || n instanceof GuiWidgetNode || n instanceof GuiWindowNode;
+	}
 
 }

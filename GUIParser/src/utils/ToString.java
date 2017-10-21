@@ -1,26 +1,26 @@
 package utils;
 
-import guitreeparser.object.INode;
+import guitree.object.INode;
 
 public abstract class ToString {
 
-    protected String treeInString = new String();
+	protected String treeInString = new String();
 
-    public ToString(INode root) {
-        treeInString = this.toString(root);
-    }
+	public ToString(INode root) {
+		treeInString = this.toString(root);
+	}
 
-    protected String genTab(int level) {
-        String tab = "";
-        for (int i = 0; i < level; i++) {
-            tab += "     ";
-        }
-        return tab;
-    }
+	protected String genTab(int level) {
+		String tab = "";
+		for (int i = 0; i < level; i++) {
+			tab += "     ";
+		}
+		return tab;
+	}
 
-    public String getTreeInString() {
-        return treeInString;
-    }
+	public String getTreeInString() {
+		return treeInString;
+	}
 
-    abstract public String toString(INode n);
+	abstract public String toString(INode n);
 }
