@@ -16,11 +16,8 @@ To obtain GUI tree and EFG of each sample, please follow these steps:
 
 2. Download GUITAR, then modify its configuration file
 
-3. Execute GUITAR, then get Project.EFG.xml and Project.GUI.xml
+3. Execute GUITAR, then get Project.EFG.xml and Project.GUI.xml. Done!
 
-4. Load Project.EFG.xml and Project.GUI.xml to GUIParser
-
-5. Get cypher script and copy it to Neo4J
 
 ## 1. Project StudentManagement
 The first simple version of student management software. 
